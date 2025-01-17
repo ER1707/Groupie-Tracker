@@ -61,17 +61,16 @@ func main() {
 		fmt.Println("----------------------------")
 		fmt.Println("ID:", artist.ID)
 		fmt.Println("Name:", artist.Name)
+		fmt.Println("Image:", artist.Image)
 		fmt.Println("Members:", artist.Members)
 		fmt.Println("Creation date:", artist.CreationDates)
 		fmt.Println("First album:", artist.FirstAlbum)
 		chemin = "https://groupietrackers.herokuapp.com/api/locations"
-		location := locations[index]
-		fmt.Println("ID:", location.ID)
-		for _
-		fmt.Println("Locations:", location.Locations)
+		for _, location := range locations {
+			fmt.Println("Locations:", location.Locations[3])
+		}
 		chemin = "https://groupietrackers.herokuapp.com/api/dates"
 		date := dates[index]
-		fmt.Println("ID", date.ID)
 		fmt.Println("Dates", date.Dates)
 		index += 1
 	}
