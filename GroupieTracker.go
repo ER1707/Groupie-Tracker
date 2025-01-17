@@ -72,7 +72,7 @@ func main() {
 		chemin = "https://groupietrackers.herokuapp.com/api/dates"
 		date := dates[index]
 		fmt.Println("Dates", date.Dates)
-		index += 1
+		index += 12
 	}
 }
 
